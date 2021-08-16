@@ -1,0 +1,136 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  flex-direction: column;
+  background-color: rgb(250, 248, 248);
+}
+.quote-container {
+  height: 60vh;
+  width: 60%;
+  margin: 0 auto;
+  border: none;
+  font-size: 4rem;
+  border-radius: 1rem;
+  background-color: rgb(67, 65, 66);
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.fas {
+  color: gray;
+}
+
+.quote {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.quote-text {
+  color: #fff;
+  font-weight: 500;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.author {
+  margin-top: 0.5rem;
+}
+
+.author__text {
+  color: rgb(233, 228, 228);
+  font-size: 3rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  padding: 2rem 2rem 0 2rem;
+}
+
+.btn {
+  padding: 1.5rem;
+}
+
+.prev__quote {
+  background-color: crimson;
+  color: #fff;
+  font-size: 1.5rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  border: none;
+  border-radius: 1rem;
+}
+
+.new__quote {
+  background-color: green;
+  color: #fff;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 1rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+
+.prev__quote:active,
+.new__quote:active {
+  transform: translateY(0.1rem);
+  box-shadow: 0 0.1rem rgba(255, 255, 255, 0.6);
+}
+
+.btn:hover {
+  filter: brightness(110%);
+}
+
+footer {
+  color: rgb(59, 57, 57);
+  font-size: 1.75rem;
+  margin-top: 1rem;
+  font-family: cursive;
+}
+
+@media screen and (max-width: 1024px) {
+  .buttons,
+  .btn {
+    padding: 1rem;
+  }
+
+  .quote-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    width: 90%;
+    text-align: center;
+  }
+  .author {
+    margin-top: 0.5rem;
+  }
+  .quote {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .fas {
+    display: none;
+  }
+  .quote-text {
+    font-size: 3rem;
+  }
+  .author__text {
+    font-size: 2.5rem;
+  }
+  .author {
+    margin-top: 0.5rem;
+  }
+}
